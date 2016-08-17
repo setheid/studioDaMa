@@ -1,0 +1,9 @@
+<section class="app-work">
+  <h2>Work</h2>
+  <div ng-repeat="project in workCtrl.projects" class="project-overview">
+    <h4>{{ project.name | uppercase }}</h4>
+    <a href="#/work/{{project.id}}">
+      <img ng-src="{{ project.img }}" alt="" />
+    </a>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<header class="app-nav">
+  <nav>
+    <ul>
+      <li ng-click="navCtrl.menuUp()"><a href="#/">HOME / </a></li>
+      <li ng-click="navCtrl.menuUp()"><a href="#/work">WORK / </a></li>
+      <li ng-click="navCtrl.menuUp()"><a href="#/about">ABOUT / </a></li>
+      <li ng-click="navCtrl.menuUp()"><a href="#/contact">CONTACT / </a></li>
+      <div class="section-divider"></div>
+    </ul>
+
+    <div class="hamburger-button">
+      <button ng-click="navCtrl.showMenu()" type="button" name="hamburger-menu"><i class="fa fa-bars"></i> <span>MENU</span></button>
+      <div class="section-divider"></div>
+    </div>
+
+    <figure><img ng-src="{{ navCtrl.logo }}" alt="" /></figure>
+  </nav>
+  <div class="section-divider"></div>
+</header>

@@ -1,0 +1,66 @@
+@import "_theme";
+
+.app-nav {
+  ul {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-size: 2.5rem;
+    li {
+      text-align: center;
+      padding-top: 5px;
+    }
+    .section-divider {
+      padding-top: 10px;
+    }
+  }
+  .hamburger-button {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    button {
+      border: none;
+      background: none;
+      font-size: 3rem;
+      color: $app-gray;
+      &:focus {outline:0;}
+    }
+  }
+  figure {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .app-nav {
+    position: relative;
+    ul {
+      position: absolute;
+      display: block;
+      width: auto;
+      bottom: 0;
+      right: 0;
+      padding: 0 20px 10px 0;
+      li {
+        display: inline-block;
+        padding-top: 5px;
+      }
+      .section-divider {
+        display: none;
+      }
+    }
+    figure {
+      width: auto;
+      float: left;
+    }
+    .hamburger-button {
+      display: none;
+    }
+    .section-divider {
+      clear: both;
+    }
+  }
+}
